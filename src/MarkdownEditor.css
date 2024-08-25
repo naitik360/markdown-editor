@@ -1,115 +1,43 @@
-.markdown-editor-container {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    min-height: 100px;
-    position: relative; /* Required for positioning scroll buttons */
-  }
-  
-  .editor-controls {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    background-color: #f1f1f1;
-  }
-  
-  .refresh-button {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    font-size: 18px;
-    cursor: pointer;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    margin-right: 10px;
-  }
-  
-  .refresh-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .refresh-icon {
-    margin-left: 8px; /* Adjust space as needed */
-    font-size: 18px; /* Adjust icon size as needed */
-  }
-  
-  .editor-preview-wrapper {
-    display: flex;
-    height: calc(100vh - 50px); /* Adjust height to account for the button */
-    flex: 1;
-  }
-  
-  .editor-wrapper {
-    display: flex;
-    width: 50%;
-  }
-  
-  .line-numbers {
-    width: 50px;
-    background-color: #f1f1f1;
-    border-right: 1px solid #ccc;
-    padding: 10px;
-    box-sizing: border-box;
-    padding-top: 1px;
-    text-align: center;
-  }
-  
-  #line-numbers {
-    width: 50px;
-    height: 100%;
-    overflow: hidden;
-    background: #f1f1f1;
-    border-right: 1px solid #ccc;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
-  #editor {
-    width: calc(100% - 60px); /* Adjust to fit next to line numbers */
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: none;
-    font-size: 16px;
-    font-family: monospace;
-    overflow-y: auto; /* Allow scrolling within the editor */
-  }
-  
-  #preview {
-    width: 50%;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    overflow-y: auto; /* Enable scrolling in the preview pane */
-    background-color: #f9f9f9;
-    text-align: left; /* Align text to the left */
-  }
-  
-  .scroll-buttons {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .scroll-button {
-    padding: 10px;
-    font-size: 10px;
-    padding-bottom: 6px;
-    font-weight: 500;
-    cursor: pointer;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    border-radius: 100%;
-    margin: 5px 0;
-  }
-  
-  .scroll-button:hover {
-    background-color: #0056b3;
-  }
-  
+/* App.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.editor {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #e9ecef;
+}
+
+.preview {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #f8f9fa;
+  position: relative;
+}
+
+.clear{
+  border: 2px solid black;
+  background: grey;
+  border-radius: 8px;
+  margin: 5px;
+  width: fit-content;
+  font-size: 20px;
+  padding: 5px;
+}
